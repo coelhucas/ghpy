@@ -4,6 +4,10 @@ GHPY - Github Python
 `ghpy` is a terminal utility based on the original one [gh](https://github.com/victorgama/gh) made in GoLang that allow you to use Github directly from your terminal. I'm creating this Python implementation as a challenge to myself.
 
 # TODO List
+- [ ] Project Architecture
+  - [ ] Use commands as a separated module
+  - [ ] Wrap authentication into an utils module
+  
 - [ ] Command `new`
   - [x] Create repositories
   - [x] Define either as `--public` or `--private` during creation
