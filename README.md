@@ -5,7 +5,7 @@ GHPY - Github Python
 
 # TODO List
 - [ ] Command `new`
-  - [ X ] Create repositories
+  - [ x ] Create repositories
   - [ X ] Define either as `--public` or `--private` during creation
   - [ ] Define initial license by `--license` followed by the license name
   - [ ] Optionally create with a `.gitignore` using `--gitignore` + language
