@@ -5,13 +5,13 @@ GHPY - Github Python
 
 # TODO List
 - [ ] Command `new`
-  - [ x ] Create repositories
-  - [ X ] Define either as `--public` or `--private` during creation
+  - [x] Create repositories
+  - [x] Define either as `--public` or `--private` during creation
   - [ ] Define initial license by `--license` followed by the license name
   - [ ] Optionally create with a `.gitignore` using `--gitignore` + language
   
  - [ ] Command `rm`
-  - [ X ] Remove user repositories
+  - [x] Remove user repositories
   - [ ] Remove team repositories
 
 - [ ] Team commands - ref from original https://github.com/victorgama/gh#team-management
