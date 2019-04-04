@@ -5,7 +5,7 @@ GHPY - Github Python
 
 # TODO List
 - [ ] Project Architecture
-  - [ ] Use commands as a separated module
+  - [X] Use commands as a separated module
   - [ ] Wrap authentication into an utils module
   
 - [ ] Command `new`
@@ -13,7 +13,11 @@ GHPY - Github Python
   - [x] Define either as `--public` or `--private` during creation
   - [ ] Define initial license by `--license` followed by the license name
   - [ ] Optionally create with a `.gitignore` using `--gitignore` + language
-  
+ 
+- [ ] Command Collab
+  - [ ] Collab add
+  - [ ] Collab rm
+ 
  - [ ] Command `rm`
   - [x] Remove user repositories
   - [ ] Remove team repositories
