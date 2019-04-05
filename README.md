@@ -28,4 +28,6 @@ GHPY - Github Python
   - [ ] `teams add`
   - [ ] `teams rm`
   
- - [ ] Add unit tests
+ - [ ] CI?/CD
+  - [ ] Implement travis CI
+  - [ ] Implement Tests
