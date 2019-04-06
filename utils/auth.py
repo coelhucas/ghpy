@@ -16,5 +16,11 @@ def check_if_repo_exists(repos, new_repo_name):
                 return True
     return False
 
+def is_license_valid(license_key):
+    for license in github.get_licenses():
+        if license.key == license_key:
+            return True
+    return False
+
 github = authenticate()
 user = github.get_user()
