@@ -8,19 +8,19 @@ GHPY - Github Python
   - [X] Use commands as a separated module
   - [X] Wrap authentication into an utils module
   
-- [ ] Command `new`
+- [x] Command `new`
   - [x] Create repositories
   - [x] Define either as `--public` or `--private` during creation
-  - [X] Define initial license by `--license` followed by the license name
-  - [ ] Optionally create with a `.gitignore` using `--gitignore` + language
+  - [x] Define initial license by `--license` followed by the license name
+  - [x] Optionally create with a `.gitignore` using `--gitignore` + language
  
 - [ ] Command Collab
   - [ ] Collab add
   - [ ] Collab rm
  
  - [ ] Command `rm`
-  - [x] Remove user repositories
-  - [ ] Remove team repositories
+   - [x] Remove user repositories
+   - [ ] Remove team repositories
 
 - [ ] Team commands - ref from original https://github.com/victorgama/gh#team-management
   - [ ] `teams list`
@@ -29,5 +29,5 @@ GHPY - Github Python
   - [ ] `teams rm`
   
  - [ ] CI?/CD
-  - [ ] Implement travis CI
-  - [ ] Implement Tests
+   - [ ] Implement travis CI
+   - [ ] Implement Tests
