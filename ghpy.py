@@ -8,5 +8,6 @@ def switch(action_type):
         commands.new.parse_new()
     elif (action_type == 'rm'):
         commands.rm.parse_rm()
-
+    elif (action_type == 'collab'):
+        commands.collab.parse_collab(sys.argv[2:])
 switch(sys.argv[1])

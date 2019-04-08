@@ -20,6 +20,8 @@ def parse_new():
 
 def create_repository(new_repo):
     try:
+        print("Creating repository", new_repo.name + "...")
+
         repos = utils.auth.user.get_repos()
         repo_exists = utils.auth.check_if_repo_exists(repos, new_repo.name)
         license = ""
@@ -27,7 +29,7 @@ def create_repository(new_repo):
 
         if new_repo.license and utils.auth.is_license_valid(new_repo.license):
             license = new_repo.license
-        elif utils.auth.is_license_valid(new_repo.license) == False:
+        elif new_repo.license and utils.auth.is_license_valid(new_repo.license) == False:
             print("The specified license is not valid.")
 
         if new_repo.gitignore and utils.auth.is_gitignore_valid(new_repo.gitignore):

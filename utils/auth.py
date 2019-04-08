@@ -1,8 +1,6 @@
 import os
 from github import Github
 
-_all_ = ['check_if_repo_exists']
-
 def authenticate():
     try: 
         return Github(os.environ['GITHUB_USER'], os.environ['GITHUB_ACCESS_TOKEN'])
