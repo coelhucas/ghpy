@@ -16,9 +16,9 @@ GHPY - Github Python
   - [x] Define initial license by `--license` followed by the license name
   - [x] Optionally create with a `.gitignore` using `--gitignore` + language
  
-- [ ] Command Collab
+- [x] Command Collab
   - [x] Collab add
-  - [ ] Collab rm
+  - [x] Collab rm
  
  - [ ] Command `rm`
    - [x] Remove user repositories
