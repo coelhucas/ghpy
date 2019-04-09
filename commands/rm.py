@@ -3,11 +3,7 @@ import utils
 import click
 from github import Github
 
-@click.group()
-def init_rm():
-    pass
-
-@init_rm.command()
+@click.command()
 @click.argument('name', type=str)
 def rm(name):
     remove_repository(name)

@@ -4,11 +4,7 @@ import click
 
 _all_ = ['new']
 
-@click.group()
-def init_new():
-    pass
-
-@init_new.command()
+@click.command()
 @click.argument('name', type=str)
 @click.option('--private/--public')
 @click.option('--license', '-li', type=str)

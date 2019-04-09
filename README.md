@@ -5,10 +5,10 @@ GHPY - Github Python
 
 # TODO List
 
-- [ ] [*Priority*] Project Architecture
+- [X] [*Priority*] Project Architecture
   - [X] Use commands as a separated module
   - [X] Wrap authentication into an utils module
-  - [ ] Define the best way to rework the current content to join all the commands to the same parser.
+  - [X] Define the best way to rework the current content to join all the commands to the same parser. (Click)
   
 - [x] Command `new`
   - [x] Create repositories
