@@ -17,7 +17,7 @@ GHPY - Github Python
   - [x] Optionally create with a `.gitignore` using `--gitignore` + language
  
 - [ ] Command Collab
-  - [ ] Collab add
+  - [x] Collab add
   - [ ] Collab rm
  
  - [ ] Command `rm`

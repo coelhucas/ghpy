@@ -7,8 +7,8 @@ def authenticate():
     except:
         return
 
-def check_if_repo_exists(repos, new_repo_name):
-    for r in repos:
+def check_if_repo_exists(new_repo_name):
+    for r in user.get_repos():
             repo_name = r.full_name.split("/")[1]
             if repo_name == new_repo_name:
                 return True

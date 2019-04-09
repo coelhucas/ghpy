@@ -16,8 +16,7 @@ def create_repository(name, private, license, gitignore):
     try:
         print("Creating repository", name + "...")
 
-        repos = utils.auth.user.get_repos()
-        repo_exists = utils.auth.check_if_repo_exists(repos, name)
+        repo_exists = utils.auth.check_if_repo_exists(name)
         license = ""
         gitignore = ""
 

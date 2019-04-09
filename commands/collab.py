@@ -1,10 +1,21 @@
-import argparse
+import click
 import utils
+from github import Github
 
-_all_ = ['parse_collab']
+@click.command()
+@click.argument('action', type=str)
+@click.argument('repository', type=str)
+@click.argument('user', type=str)
+def collab(action, repository, user):
+    if action == utils.io.add:
+        print('Adding', user, 'as a collaborator on the repository:', repository)
+        if utils.auth.check_if_repo_exists(repository):
+            repo = utils.user.get_repo(repository)
+            add_collaborator(repo, user)
 
-def parse_collab(args):
-    parser = argparse.ArgumentParser(description='Controls github from your terminal.')
-    #args = parser.parse_args()
-    if args[0] == utils.io.add:
-        print('Adding + to your clip')
+def add_collaborator(repo, user):
+    try:
+        repo.add_to_collaborators(user)
+        print(user, 'was added as a collaborator in', repo.full_name)
+    except NameError:
+        print(NameError)

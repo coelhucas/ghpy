@@ -14,5 +14,6 @@ __all__ = [
 def cli():
     pass
 
+cli.add_command(collab)
 cli.add_command(new)
 cli.add_command(rm)
