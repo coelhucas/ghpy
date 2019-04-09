@@ -1,17 +1,16 @@
-import argparse
 import sys
 import utils
+import click
 from github import Github
 
-__all__ = ['parse_rm']
+@click.group()
+def init_rm():
+    pass
 
-def parse_rm():
-    parser = argparse.ArgumentParser(description='Controls github from your terminal.')
-    repo_deletion_group = parser.add_argument_group('remove_group')
-    repo_deletion_group.add_argument('rm', help="Delete a repository.", type=str, default=False)
-    parser.add_argument("name", help="The name of your repo.", type=str)
-    args = parser.parse_args()
-    remove_repository(args.name)
+@init_rm.command()
+@click.argument('name', type=str)
+def rm(name):
+    remove_repository(name)
 
 def remove_repository(repo_name):
     try:

@@ -3,11 +3,14 @@ import argparse
 import sys
 import commands
 
-def switch(action_type):
+commands.cli()
+
+"""def switch(action_type):
     if (action_type == 'new'):
-        commands.new.parse_new()
+        pass
+#        commands.new.parse_new()
     elif (action_type == 'rm'):
         commands.rm.parse_rm()
     elif (action_type == 'collab'):
         commands.collab.parse_collab(sys.argv[2:])
-switch(sys.argv[1])
+switch(sys.argv[1])"""
