@@ -29,7 +29,11 @@ GHPY - Github Python
   - [ ] `teams members`
   - [ ] `teams add`
   - [ ] `teams rm`
-  
+
+- [ ] Logging
+  - [ ] Make some logging pattern to handle logs
+  - [ ] Ensure that general errors are covered by logs
+
  - [ ] CI?/CD
    - [ ] Implement travis CI
    - [ ] Implement Tests

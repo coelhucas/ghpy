@@ -9,7 +9,7 @@ from github import Github
 def collab(action, repository, user):
     if action == utils.io.add:
         if utils.auth.check_if_repo_exists(repository):
-            print('Adding', user, 'as a collaborator on the repository:', repository)
+            click.echo("Adding " + click.style(user, fg='cyan') + f" as a collaborator on the repository: {repository}")
             repo = utils.user.get_repo(repository)
             add_collaborator(repo, user)
     elif action == utils.io.rm:
