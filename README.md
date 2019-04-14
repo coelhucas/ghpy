@@ -34,6 +34,4 @@ GHPY - Github Python
   - [ ] Make some logging pattern to handle logs
   - [ ] Ensure that general errors are covered by logs
 
- - [ ] CI?/CD
-   - [ ] Implement travis CI
-   - [ ] Implement Tests
+ - [ ] Implement CI with tests.
