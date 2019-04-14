@@ -12,7 +12,7 @@ _all_ = ['new']
 def new(name, private, license, gitignore):
     create_repository(name, private, license, gitignore)
 
-def create_repository(name, private, license, gitignore):
+def create_repository(name, private, license ='', gitignore =''):
     try:
         print("Creating repository", name + "...")
 
@@ -24,7 +24,9 @@ def create_repository(name, private, license, gitignore):
         if gitignore and not utils.auth.is_gitignore_valid(gitignore):
             return print("The specified gitignore template is not valid.")
         if not repo_exists:
-            utils.user.create_repo(name=name, private=private, license_template=license, gitignore_template=gitignore)
+            utils.user.create_repo(name=name, private=private, 
+                license_template=license if license != None else '', 
+                gitignore_template=gitignore if gitignore != None else '')
             print("Successfully created the repository", name + ".")
         else:
             print("You already have a repository with this name.")
