@@ -23,6 +23,9 @@ def create_repository(name, private, license ='', gitignore =''):
 
         if gitignore and not utils.auth.is_gitignore_valid(gitignore):
             return print("The specified gitignore template is not valid.")
+
+        gitignore = utils.auth.is_gitignore_valid(gitignore) if gitignore else None
+
         if not repo_exists:
             utils.user.create_repo(name=name, private=private, 
                 license_template=license if license != None else '', 
