@@ -3,6 +3,12 @@ Control github from your terminal.
 GHPY - Github Python
 `ghpy` is a terminal utility based on the original one [gh](https://github.com/victorgama/gh) made in Go that allow you to use Github directly from your terminal. I'm creating this Python implementation as a challenge to myself. **Disclaimer**: It's still a work in progress.
 
+You must add two env variables to use it in its current state:
+```
+GITHUB_USER=YOUR_GITHUB_USER
+GITHUB_ACCESS_TOKEN=YOUR_ACCESS_TOKEN
+```
+
 # TODO List
 
 - [X] [*Priority*] Project Architecture
